@@ -3,7 +3,7 @@ import socket
 import sys
 import time
 
-logging.basicConfig(level=logging.info, stream=sys.stdout)
+logging.basicConfig(level=logging.INFO, stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
 class DronManager(object):
@@ -38,6 +38,6 @@ if __name__ == '__main__':
     drone_manager = DronManager()
     drone_manager.takeoff()
 
-    time.sleep(10)
+    time.sleep(5)
 
     drone_manager.land()
